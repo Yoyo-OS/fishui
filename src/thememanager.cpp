@@ -137,6 +137,33 @@ void ThemeManager::onDBusColorChanged()
     {
         m_greyColor = QColor(color6);
     }
+
+    switch (m_accentColorIndex) {
+    case ACCENTCOLOR_BLUE:
+        m_accentColor = m_blueColor;
+        break;
+     case ACCENTCOLOR_RED:
+        m_accentColor = m_redColor;
+        break;
+     case ACCENTCOLOR_GREEN:
+        m_accentColor = m_greenColor;
+        break;
+     case ACCENTCOLOR_PURPLE:
+        m_accentColor = m_purpleColor;
+        break;
+     case ACCENTCOLOR_PINK:
+        m_accentColor = m_pinkColor;
+        break;
+     case ACCENTCOLOR_ORANGE:
+        m_accentColor = m_orangeColor;
+        break;
+     case ACCENTCOLOR_GREY:
+        m_accentColor = m_greyColor;
+        break;
+     default:
+        m_accentColor = m_blueColor;
+        break;
+     }
     emit accentColorChanged();
     emit colorChanged();
 }
