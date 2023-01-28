@@ -55,3 +55,9 @@ build/*
 
 .idea
 .vscode/*
+debian/.debhelper
+debian/fishui
+obj-x86_64-linux-gnu
+debian/fishui.debhelper.log
+debian/fishui.substvars
+debian/files
