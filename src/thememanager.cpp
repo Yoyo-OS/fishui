@@ -137,6 +137,7 @@ void ThemeManager::onDBusColorChanged()
     {
         m_greyColor = QColor(color6);
     }
+    emit accentColorChanged();
     emit colorChanged();
 }
 
