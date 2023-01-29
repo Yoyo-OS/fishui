@@ -39,7 +39,11 @@ void FishUI::initializeEngine(QQmlEngine *engine, const char *uri)
     Q_ASSERT(QLatin1String(uri) == QLatin1String("FishUI"));
 
     int fontId = QFontDatabase::addApplicationFont(":/fishui/kit/images/fonticons/MaterialIcons-Regular.ttf");
-    QStringList fontFamilies = QFontDatabase::applicationFontFamilies(fontId);
+    int fontId1 = QFontDatabase::addApplicationFont(":/fishui/kit/images/fonticons/MingCute.ttf");
+    QStringList fontFamilies;
+    fontFamilies<< QFontDatabase::applicationFontFamilies(fontId)
+                << QFontDatabase::applicationFontFamilies(fontId1);
+
     // Set base URL to the plugin URL
     engine->setBaseUrl(baseUrl());
 
@@ -82,7 +86,7 @@ void FishUI::registerTypes(const char *uri)
     qmlRegisterType(componentUrl(QStringLiteral("Window.qml")), uri, 1, 0, "Window");
     qmlRegisterType(componentUrl(QStringLiteral("RoundImageButton.qml")), uri, 1, 0, "RoundImageButton");
     qmlRegisterType(componentUrl(QStringLiteral("DesktopMenu.qml")), uri, 1, 0, "DesktopMenu");
-    qmlRegisterType(componentUrl(QStringLiteral("MaterialIcons.qml")), uri, 1, 0, "MaterialIcons");
+    qmlRegisterType(componentUrl(QStringLiteral("FontIcons.qml")), uri, 1, 0, "FontIcons");
 
     qmlProtectModule(uri, 1);
 }

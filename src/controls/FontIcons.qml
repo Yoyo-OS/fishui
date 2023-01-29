@@ -15,7 +15,7 @@ QQC2.Label {
     renderType: FishUI.Theme.renderType
 
     font.capitalization: FishUI.Theme.defaultFont.capitalization
-    font.family: "MaterialIcons"
+    font.family: "MingCut"
     font.italic: FishUI.Theme.defaultFont.italic
     font.letterSpacing: FishUI.Theme.defaultFont.letterSpacing
     font.pointSize: iconSize
