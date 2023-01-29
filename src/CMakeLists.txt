@@ -59,7 +59,7 @@ target_link_libraries(${TARGET}
         )
 if (UNIX)
     if (NOT APPLE)
-        target_link_libraries(${TARGET} PRIVATE Qt5::X11Extras KF5::WindowSystem)
+        target_link_libraries(${TARGET} PRIVATE Qt5::X11Extras Qt5::Gui KF5::WindowSystem)
     endif ()
 endif ()
 

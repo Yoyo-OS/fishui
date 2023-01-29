@@ -32,6 +32,8 @@
         <file>images/toast/success.svg</file>
         <file>images/toast/warn.svg</file>
         <file alias="ActionTextField.qml">controls/ActionTextField.qml</file>
+        <file>images/fonticons/MaterialIcons-Regular.ttf</file>
+        <file alias="MaterialIcons.qml">controls/MaterialIcons.qml</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>
