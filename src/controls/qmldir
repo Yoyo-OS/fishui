@@ -26,5 +26,4 @@ TabBar 1.0 TabBar.qml
 TabButton 1.0 TabButton.qml
 TabCloseButton 1.0 TabCloseButton.qml
 TabView 1.0 TabView.qml
-FontIcons 1.0 FontIcons.qml
 Toast 1.0 Toast.qml
